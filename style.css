@@ -1,0 +1,208 @@
+body::before {
+    display: block;
+    content: '';
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+  .navbar
+  {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    transition: 1s;
+  }
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .website-banner {
+    /* The image used */
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url('img/background.gif');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-overlay
+  {
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0), rgba(0, 0, 0, 1));
+    height: 100%;
+    width: 100%;
+  }
+  .movie-card
+  {
+    /* background-color: rgb(0,0,0); */
+    /* background-color: rgba(0,0,0, 0.1); */
+    /* border: 2px solid dark; */
+    height: 100%;
+    width: 30%;
+    transition: 1s ease-in-out;
+  }
+  .works-card
+  {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    border: 2px solid dark;
+    height: 200px;
+  }
+  .movie-thumbnail
+  {
+    display: block;
+    opacity: 1;
+    height: 80vh;
+    width: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: filter 1s ease-in-out;
+  }
+  .movie-thumbnail-overlay
+  {
+    background-image: linear-gradient(to left, rgba(0,0,0, 0), rgba(0, 0, 0, 0.2));
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+  }
+  .movie-video
+  {
+    height: 80vh;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: 2s;
+  }
+  .works-col
+  {
+    border: 3px solid gray;
+    border-radius: 5px;
+  }
+  .responsiveimg
+  {
+    max-width: 17rem;
+  }
+  .news-image
+  {
+    max-width: 12rem;
+    max-height:15rem;
+  }
+
+  .movierecbanner
+  {
+    color: black;
+    -webkit-text-fill-color: dark; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: dark;
+  }
+  .text-stroke
+  {
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: dark;
+  }
+  @media only screen and  (max-width: 768px) {
+    .news-input {
+      width: 50%;
+    }
+    .news-image
+    {
+      max-width: 11rem;
+      max-height:18rem;
+    }
+    .responsiveimg
+    {
+      width: 10rem;
+      height: 20rem;
+      font-size: 10px;
+      padding: 0px;
+    }
+    .responsiveimg h5
+    {
+      font-size: 10px;
+      margin-bottom: 0px;
+    }
+    .movie-card
+    {
+      width: 40%;
+    }
+    .topcard
+    {
+      height: 30rem;
+      width: 100%;
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+    .topthumbnail
+    {
+      max-height: 9rem;
+      border: 2px;
+    }
+    .topcard h5
+    {
+      font-size: 15px;
+    }
+    .topdescription
+    {
+      max-height: 8rem;
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .news-input {
+      width: 50%;
+    }
+    .news-image
+    {
+      max-width: 5rem;
+      max-height:5rem;
+    }
+    .responsiveimg
+    {
+      width: 5.5rem;
+      height: 15rem;
+      font-size: 10px;
+      padding: 0px;
+    }
+    .responsiveimg h5
+    {
+      font-size: 10px;
+      margin-bottom: 0px;
+    }
+    .movie-card
+    {
+      width: 40%;
+    }
+    .topcard
+    {
+      height: 25rem;
+      margin-bottom: 0px;
+      font-size: 10px;
+    }
+    .topthumbnail
+    {
+      max-height: 8rem;
+      border: 2px;
+    }
+    .topcard h5
+    {
+      font-size: 12px;
+    }
+    .topdescription
+    {
+      max-height: 5rem;
+      font-size: 10px;
+    }
+  }
+  
+  

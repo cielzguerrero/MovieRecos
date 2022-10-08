@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/5.1.0/mediaelement.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>MovieRecos</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  navbar-dark fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">MovieRecos</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a href="#monthstop3" class="nav-link text-dark">Top Recommends</a>
+          </li>
+          <li class="nav-item">
+            <a href="#newrecommended" class="nav-link text-dark">New Recommend</a>
+          </li>
+          <li class="nav-item">
+            <a href="#oldbutgold" class="nav-link text-dark">Old but Gold</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link text-dark">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="website-banner jarallax" data-jarallax data-speed="0.2">
+    <section class="hero text-white text-center d-flex align-items-center justify-content-center vh-100 overlay" id="websitebanner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5 class="text-stroke">Welcome to MovieRecos</h5>
+            <h1 class="text-stroke display-2">
+              We recommend Movies
+              <br>
+              that you can enjoy!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This Months Recommendation -->
+    <section class="banner-overlay hero text-white text-center vh-100 overlay" >
+      <div class="container" id="monthstop3">
+        <h1 class="bg-warning border border-warning rounded movierecbanner p-2"><span style="color: black;">This Month's
+            Top Recommendations</span></h1>
+        <div class="owl-carousel owl-theme recommend-slider">
+
+          <div class="item m-auto h-100" onmouseenter="imageHover1()" onmouseleave="imageHL1()" id="movie1">
+            <div class="card bg-dark topcard">
+              <img src="img/americansniper.jpg" class="card-img movie-thumbnail" id="moviethumbnail1" alt="...">
+              <video class="movie-video" id="movievideo1">
+                <source src="video/americansniper360.mp4" type="video/mp4">
+              </video>
+
+              <div class="card-img-overlay movie-thumbnail-overlay ">
+                <div class="movie-card hero p-2 overflow-hidden" id="moviecard1">
+                  <img src="img/americansniperthumbnail.jpg"
+                    class="mx-auto d-block img-thumbnail bg-warning border-warning h-50 w-75 topthumbnail" alt="">
+                  <h5 class="card-title p-3 text-warning">American Sniper</h5>
+                  <figcaption class="blockquote-footer">
+                    <cite title="Source Title"> 2014 . </cite> War/Action . 2h 12m
+                    <br>
+                  </figcaption>
+                  <figure class="text-center">
+                    <blockquote class="blockquote">
+                      <p class="card-text h6 fw-normal overflow-auto topdescription">U.S. Navy SEAL Chris Kyle takes his sole mission -- protect
+                        his comrades -- to heart and becomes one of the most lethal snipers in American history. His
+                        pinpoint accuracy not only saves countless lives but also makes him a prime target of
+                        insurgents. Despite grave danger and his struggle to be a good husband and father to his family
+                        back in the States, Kyle serves four tours of duty in Iraq. However, when he finally returns
+                        home, he finds that he cannot leave the war behind.</p>
+                    </blockquote>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item m-auto h-100" onmouseenter="imageHover2()" onmouseleave="imageHL2()" id="movie2">
+
+            <div class="card bg-dark topcard">
+              <img src="img/madmaxfr.jpg" class="card-img movie-thumbnail" id="moviethumbnail2" alt="...">
+              <video class="movie-video" id="movievideo2">
+                <source src="video/madmaxfr.mp4" type="video/mp4">
+              </video>
+
+              <div class="card-img-overlay ">
+                <div class="movie-card hero p-2 overflow-hidden" id="moviecard2">
+                  <img src="img/madmaxthumbnail.jfif"
+                    class="mx-auto d-block img-thumbnail bg-warning border-warning h-50 w-75 topthumbnail" alt="">
+                  <h5 class="card-title p-3 text-warning">Mad Max: Fury Road</h5>
+                  <figcaption class="blockquote-footer">
+                    <cite title="Source Title"> 2015 . </cite> Action/Adventure . 2 hours
+                  </figcaption>
+                  <figure class="text-center">
+                    <blockquote class="blockquote">
+                      <p class="card-text h6 fw-normal overflow-auto topdescription">Years after the collapse of civilization, the tyrannical
+                        Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the
+                        warrior Imperator Furiosa leads the despot's five wives in a daring escape, she forges an
+                        alliance with Max Rockatansky , a loner and former captive. Fortified in the massive, armored
+                        truck the War Rig, they try to outrun the ruthless warlord and his henchmen in a deadly
+                        high-speed chase through the Wasteland.</p>
+                    </blockquote>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item m-auto h-100" onmouseenter="imageHover3()" onmouseleave="imageHL3()" id="movie3">
+
+            <div class="card bg-dark topcard">
+              <img src="img/topgunmav.png" class="card-img movie-thumbnail" id="moviethumbnail3" alt="...">
+              <video class="movie-video" id="movievideo3">
+                <source src="video/topgunmav.mp4" type="video/mp4">
+              </video>
+
+              <div class="card-img-overlay ">
+                <div class="movie-card hero p-2 overflow-hidden" id="moviecard3">
+                  <img src="img/topgunmavthumbnail.jfif"
+                    class="mx-auto d-block img-thumbnail bg-warning border-warning h-50 w-75 topthumbnail" alt="">
+                  <h5 class="card-title p-3 text-warning">Top Gun: Maverick</h5>
+                  <figcaption class="blockquote-footer">
+                    <cite title="Source Title"> 2022 . </cite> Action/Adventure . 2h 11m
+                  </figcaption>
+                  <figure class="text-center">
+                    <blockquote class="blockquote">
+                      <p class="card-text h6 fw-normal overflow-auto topdescription">After more than 30 years of service as one of the Navy's top
+                        aviators, Pete "Maverick" Mitchell is where he belongs, pushing the envelope as a courageous
+                        test pilot and dodging the advancement in rank that would ground him. Training a detachment of
+                        graduates for a special assignment, Maverick must confront the ghosts of his past and his
+                        deepest fears, culminating in a mission that demands the ultimate sacrifice from those who
+                        choose to fly it.</p>
+                    </blockquote>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- New Recommended -->
+  <section class="p-5 text-black" style="background: black;" id="newrecommended">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-2 text-warning">New Recommended</h2>
+      <h5 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-4 text-white">This month's Recommendations by fans!</h5>
+      <div data-aos="fade-up" data-aos-duration="1000" class="accordion accordion-flush" id="questions"></div>
+      <!-- Item 1 -->
+      <div class="owl-carousel owl-theme newrecommend-slider" data-aos="fade-down" data-aos-duration="1500">
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/bullettrainthumbnail.jfif" class="card-img newrecommendcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Bullet Train</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">7.4</span> .
+              <cite title="Source Title"> 2022 . </cite> Action/Thriller
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/prey2022thumbnail.jfif" class="card-img newrecommendcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Prey</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">7.5</span> .
+              <cite title="Source Title"> 2022 . </cite> Action/Sci-fi
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/thirteenlivesthumbnail.jfif" class="card-img newrecommendcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Thirteen Lives</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.4</span> .
+              <cite title="Source Title"> 2022 . </cite> Drama/Survival
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/jujutsukaisen0thumbnail.jfif" class="card-img newrecommendcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Jujutsu Kaisen</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.5</span> .
+              <cite title="Source Title"> 2021 . </cite> Fantasy/Action
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/theroundupthumbnail.jfif" class="card-img newrecommendcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">The Roundup</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">9.5</span> .
+              <cite title="Source Title"> 2022 . </cite> Action/Crime
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr class="border-warning mx-auto d-block" style="width: 80%;" data-aos="zoom-in" data-aos-duration="1500">
+
+    </div>
+  </section>
+  <!-- Old but gold -->
+  <section class="p-5 text-black" style="background: black;" id="oldbutgold">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-2 text-warning">Old but Gold</h2>
+      <h5 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-4 text-white">Rewatch or Explore the Movie classics!</h5>
+      <div data-aos="fade-up" data-aos-duration="1000" class="accordion accordion-flush" id="questions"></div>
+      <div class="owl-carousel owl-theme oldbutgold-slider" data-aos="fade-down" data-aos-duration="1500">
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/threeidiotsthumbnail.jfif" class="card-img oldbutgoldcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">3 Idiots</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">9.5</span> .
+              <cite title="Source Title"> 2009 . </cite> Comedy/Romance
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/theeighhundredthumbnail.jfif" class="card-img oldbutgoldcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">The Eigth Hundred</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.0</span> .
+              <cite title="Source Title"> 2020 . </cite> War/Drama
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/thegreenmile.jfif" class="card-img oldbutgoldcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">The Green Mile</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.8</span> .
+              <cite title="Source Title"> 1999 . </cite> Fantasy/Drama
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/interstellarthumbnail.jfif" class="card-img oldbutgoldcard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Interstellar</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.6</span> .
+              <cite title="Source Title"> 2014 . </cite> Sci-fi/Adventure
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-warning mx-auto d-block" style="width: 80%;" data-aos="zoom-in" data-aos-duration="1500">
+  </section>
+  <section class="p-5 text-black" style="background: black;" id="toptvseries">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-2 text-warning">This Month's Top TV Series</h2>
+      <h5 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-4 text-white">These are the series you either binge or watch one by one!</h5>
+      <div data-aos="fade-up" data-aos-duration="1000" class="accordion accordion-flush" id="questions"></div>
+      <div class="owl-carousel owl-theme toptvseries-slider" data-aos="fade-down" data-aos-duration="1500">
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/theboys.jfif" class="card-img toptvseriescard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">The Boys</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.8</span> .
+              <cite title="Source Title"> 2019 . </cite> Action/Sci-Fi
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/thewitcher.jfif" class="card-img toptvseriescard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">The Witcher</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.3</span> .
+              <cite title="Source Title"> 2019 . </cite> Fantasy/Action
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/bettercaulsaul.jfif" class="card-img toptvseriescard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Better Call Saul</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.7</span> .
+              <cite title="Source Title"> 2015 . </cite> Comedy/Drama
+              </figcaption>
+            </div>
+          </div>
+        </div>
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-block responsiveimg"> 
+            <img src="/img/cyberpunkedgerunners.jfif" class="card-img toptvseriescard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-2">Cyberpunk: Edgerunners</h5>
+              <figcaption class="figure-caption">
+              <i class="fa-solid fa-star text-warning"></i> <span class="text-warning">8.8</span> .
+              <cite title="Source Title"> 2022 . </cite> Action/Sci-Fi
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="border-warning mx-auto d-block" style="width: 80%;" data-aos="zoom-in" data-aos-duration="1500">
+  </section>
+  <!-- Tv Series -->
+  <section class="p-5 text-black" style="background: black;" id="news">
+    <div class="container">
+      <h2 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-2 text-warning">News</h2>
+      <h5 data-aos="fade-down" data-aos-duration="1500" class="text-left mb-4 text-white">New trailers or news every month!</h5>
+      <div data-aos="fade-up" data-aos-duration="1000" class="accordion accordion-flush" id="questions"></div>
+      <div class="owl-carousel owl-theme news-slider" data-aos="fade-down" data-aos-duration="1500">
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-flex flex-row" style="width: 80%;">
+            <img class="card-img img-thumbnail border-warning bg-warning news-image" src="img/johnwick4.jpg" alt="Card image cap" style="">
+            <div class="card-body p-3">
+              <h5 class="card-title">JOHN WICK: CHAPTER 4</h5>
+              <p class="card-text overflow-auto" style="max-height:11rem;">With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.</p>
+              <a href="https://www.youtube.com/watch?v=L_KbEsT80KY" target="_blank" class="btn btn-warning">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-flex flex-row" style="width: 80%;">
+            <img class="card-img img-thumbnail border-warning bg-warning news-image" src="img/violentnight.jfif" alt="Card image cap" style="">
+            <div class="card-body p-3">
+              <h5 class="card-title">Violent Night</h5>
+              <p class="card-text overflow-auto" style="max-height:11rem;">From 87North, the bare-knuckle producers of Nobody, John Wick, Atomic Blonde, Deadpool 2, Bullet Train and Fast & Furious Presents: Hobbs & Shaw comes a coal-dark holiday action-comedy that says you should always bet on red.</p>
+              <a href="https://www.youtube.com/watch?v=a53e4HHnx_s" target="_blank" class="btn btn-warning">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item m-auto h-100">
+          <div class="card bg-dark text-white mx-auto d-flex flex-row" style="width: 80%;">
+            <img class="card-img img-thumbnail border-warning bg-warning news-image" src="img/supermario.jfif" alt="Card image cap" style="">
+            <div class="card-body p-3">
+              <h5 class="card-title">The Super Mario Bros. Movie</h5>
+              <p class="card-text overflow-auto" style="max-height:11rem;">Directed by Aaron Horvath and Michael Jelenic (collaborators on Teen Titans Go!, Teen Titans Go! To the Movies) from a screenplay by Matthew Fogel (The LEGO Movie 2: The Second Part, Minions: The Rise of Gru), the film stars Chris Pratt as Mario, Anya Taylor-Joy as Princess Peach, Charlie Day as Luigi, Jack Black as Bowser, Keegan-Michael Key as Toad, Seth Rogen as Donkey Kong, Fred Armisen as Cranky Kong, Kevin Michael Richardson as Kamek and Sebastian Maniscalco as Spike.</p>
+              <a href="https://www.youtube.com/watch?v=yPpazvJrHm0&t=5s" target="_blank" class="btn btn-warning">Watch Trailer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <div id="contact" class="py-5 contact text-center text-black" style="background: black;">
+    <div class="container py-4">
+      <hr class="border-warning mx-auto d-block" data-aos="zoom-in" data-aos-duration="1500">
+      <div class="row align-items-center justify-content-center bg-warning py-5 rounded">
+        <div class="col-md-6 py-1">
+          <h3>Do you have any recommendations? Contact Us!</h3>
+        </div>
+        <div class="col-md-4 py-1">
+          <a href="mailto: ciel.com" class="btn btn-light p-2" data-bs-toggle="modal"
+          data-bs-target="#movierecommendation">Send Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer class="bg-warning"  style="background-color:black;">
+    <div class="container text-center">
+      <div class="row bg-warning p-5">
+        <div class="col-12">
+          <div>
+            <a class="lead bg-white border-warning rounded p-1 text-center badge" href="#websitebanner" style="text-decoration: none; color:black;">Home</a>
+            <a class="lead bg-white border-warning rounded p-1 text-center badge" href="#monthstop3" style="text-decoration: none; color:black;">Top Recommendations</a>
+            <a class="lead bg-white border-warning rounded p-1 text-center badge" href="#newrecommended" style="text-decoration: none; color:black;">Recommendations</a>
+            <a class="lead bg-white border-warning rounded p-1 text-center badge" href="#contact" style="text-decoration: none; color:black;">Contact</a>
+          </div>
+          <p class="mb-0 py-3">Copyright 2022 ©️ Designed by Cielito C. Guerrero. All Rights Reserved. </p>
+          <div>
+            <a class="lead bg-primary border-warning rounded p-1 text-center badge text-white" href="#" style="text-decoration: none; color:black;">Facebook</a>
+            <a class="lead bg-info border-warning rounded p-1 text-center badge text-white" href="#" style="text-decoration: none; color:black;">Twitter</a>
+            <a class="lead bg-dark border-warning rounded p-1 text-center badge text-white" href="#" style="text-decoration: none; color:black;">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="movierecommendation" tabindex="-1" aria-labelledby="movierecommendationLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="movierecommendationLabel">Send Me A Message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and I will get back to you.</p>
+          <form onsubmit="Mail(); reset(); return false;">
+            <div class="mb-3">
+              <label for="name" class="col-form-label">
+                Name:
+              </label>
+              <input type="text" required autocomplete="off" class="form-control" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" required autocomplete="off" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="col-form-label">Message:</label>
+              <textarea required autocomplete="off" class="form-control" id="message" style="height:110px"></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.0.4/jarallax.min.js"></script>
+<!-- <script src="jarallax/jarallax.min.js"></script> -->
+<script src="effects.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+</html>
