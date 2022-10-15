@@ -25,7 +25,18 @@ $(window).scroll(function(){
     smartSpeed:600,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:false
+    autoplayHoverPause:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        }
+    }
 });
   $('.oldbutgold-slider').owlCarousel({
     loop:true,
@@ -35,7 +46,18 @@ $(window).scroll(function(){
     smartSpeed:600,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:false
+    autoplayHoverPause:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        }
+    }
   });
   $('.toptvseries-slider').owlCarousel({
     loop:true,
@@ -45,7 +67,18 @@ $(window).scroll(function(){
     smartSpeed:600,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:false
+    autoplayHoverPause:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        }
+    }
   });
   $('.news-slider').owlCarousel({
     loop:true,
